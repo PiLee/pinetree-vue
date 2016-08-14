@@ -1,0 +1,11 @@
+.index-article-list{
+	.article-item{
+		border-bottom:1px solid $border-clr;
+		padding:.5rem .2rem;
+		font-size: .2rem;
+	}
+	.btn-more,.create-time{
+		font-size:.14rem;
+		margin-left: .1rem;
+	}
+}

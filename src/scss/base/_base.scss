@@ -1,0 +1,153 @@
+/* css common */
+.clearfix {
+  &:after {
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+  }
+  *zoom: 1;
+}
+
+.f0{
+  font-size: 0;
+}
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.f20p {
+  font-size: 20px;
+}
+
+.f18p {
+  font-size: 18px;
+}
+
+.f14p {
+  font-size: 14px;
+}
+
+.f12p {
+  font-size: 12px;
+}
+
+.cb {
+  clear: both;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.txt-center {
+  text-align: center;
+}
+
+.txt-right {
+  text-align: right;
+}
+
+.txt-left {
+  text-align: left;
+}
+
+.m0auto {
+  margin: 0 auto;
+}
+
+.v-middle {
+  vertical-align: middle;
+}
+
+
+.w100 {
+  width: 100%;
+}
+
+.pos-rel {
+  position: relative;
+}
+
+.pos-abs {
+  position: absolute;
+}
+
+
+.dis-block{
+  display: block;
+}
+
+.indent-2e p {
+  text-indent: 2em;
+}
+
+
+.tbl {
+  width: 100%;
+  display: table;
+  text-align: center;
+}
+
+.tbl-row {
+  display: table-row;
+}
+
+.tbl-cell {
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.tbl {
+  &.v-top .tbl-cell {
+    vertical-align: top;
+  }
+  &.tbl-2-col .tbl-cell {
+    width: 50%;
+  }
+  &.tbl-3-col .tbl-cell {
+    width: 33.33%;
+  }
+  &.tbl-4-col .tbl-cell {
+    width: 25%;
+  }
+}
+
+.flex {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -moz-box;
+  display: flex;
+  word-break: break-all;
+  .side-auto {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    display: block;
+    min-height: 0;
+  }
+}
+
+.abstract {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.border-box{
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+%border-box{
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}

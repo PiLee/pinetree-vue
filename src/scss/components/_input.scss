@@ -1,0 +1,12 @@
+.input-default{
+	$border-clr: #e5e5e5;
+	$bg-clr: #f7f7f7;
+	width: 100%;
+	background: $bg-clr;
+	color:#999;
+	font-size: 14px;
+	border: none;
+	padding: 0 5px;
+	border:1px solid $border-clr;
+	height: 26px;
+}

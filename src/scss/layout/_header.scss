@@ -1,0 +1,37 @@
+.main-header{
+	height:$main-header-height;
+	background:#FFF;
+	border-bottom:1px solid $border-clr;
+	padding:.3rem .3rem 0 .3rem;
+	text-align:center;
+	@extend %border-box;
+	.my-name{
+		margin:.1rem 0 .2rem 0;
+		font-size: .2rem;
+	}
+	.my-avatar{
+		margin:0 auto;
+		width:1rem;
+		height:1rem;
+		@extend %circle-img;
+	}
+	.main-nav{
+		margin:0 auto;
+		width:2.42rem;
+		.nav-item{
+			float: left;
+			text-align: center;
+			background:#F1F1F1;
+			padding:.05rem 0;
+			a{
+				display: block;
+				width:1.2rem;
+				padding:.05rem 0;
+				border-right:1px solid #E8E8E8;
+			}
+			&:last-child a{
+				border-right:0;
+			}
+		}
+	}
+}

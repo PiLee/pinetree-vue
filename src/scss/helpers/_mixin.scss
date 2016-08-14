@@ -1,0 +1,47 @@
+@mixin translateX($x){
+	-webkit-transform: translateX($x);
+    transform: translateX($x);
+}
+
+@mixin translateY($y){
+	-webkit-transform: translateY($y);
+    transform: translateY($y);
+}
+
+@mixin translateXY($x,$y){
+	-webkit-transform: translateX($x) translateY($y);
+    transform: translateX($x) translateY($y);
+}
+
+@mixin scaleX($per){
+	-webkit-transform: scaleX($per);
+    transform: scaleX($per);
+}
+
+@mixin transition($second:.2s){
+	-webkit-transition: ease $second;
+	transition: ease $second;
+}
+
+@mixin rotate($deg){
+	-webkit-transform: rotate($deg);
+	transform: rotate($deg);
+}
+
+@mixin tips-pos($top,$right){
+	top: $top;
+	right: $right;
+}
+
+@mixin circle-style($width,$height,$bgclr){
+	width: $width;
+	height: $height;
+	background: $bgclr;
+}
+
+@mixin linear-gradient($topClr, $bottomClr){
+  background: -webkit-linear-gradient($topClr, $bottomClr); 
+  background: -moz-linear-gradient($topClr, $bottomClr); 
+  background: linear-gradient($topClr, $bottomClr); 
+ }
+

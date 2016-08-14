@@ -1,0 +1,9 @@
+.main-footer{
+  height:$main-footer-height;
+  background: #333;
+  @extend %border-box;
+  color:#FFF;
+  padding:.2rem;
+  text-align:center;
+  letter-spacing:.01rem;
+}

@@ -1,0 +1,40 @@
+%a {
+	color: $font-clr;
+	&:visited {
+      color: $font-clr;
+    }
+  }
+%circle-img{
+  border-radius:50%;
+  overflow:hidden;
+  img{
+    width:100%;
+    height:100%;
+  }
+}
+%placeholder-hidden{
+	opacity: 0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+%default-boxshadow{
+	box-shadow: 0 0 2px rgba(120, 120, 120, 0.3);
+}
+
+%num-clr-wrap{
+  font-size: 1.2rem;
+  color: #FFF;
+  border-radius: 1.5em;
+  padding: 0.25em 0.5em;
+  background: #ff4719;
+  display: inline-block;
+  line-height: 1;
+}
+
+%btn-margin-left{
+  margin-left:0.5em;
+}
