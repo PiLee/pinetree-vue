@@ -9,7 +9,6 @@ export const getArticleList = function ({ dispatch }) {
 
 export const getArticle = function ({ dispatch }, id) {
   this.$http.get(API_ROOT + 'api/article/' + id).then(response => {
-    console.log(JSON.parse(response.body))
     dispatch(types.GET_ARTICLE, JSON.parse(response.body))
   })
 }

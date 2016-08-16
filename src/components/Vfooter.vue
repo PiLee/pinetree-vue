@@ -2,7 +2,7 @@
   footer.main-footer
     .container
       p
-        a(href="/", target="_blank") PineTree  
+        a(href="https://github.com/PiLee/PineTree", target="_blank") PineTree  
         | Powered by  
         a(href="http://cn.vuejs.org/", target="_blank") Vue.js
       p 

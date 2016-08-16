@@ -4,7 +4,7 @@
     li.article-item(v-for="article in articleList")
       h1
         a(v-link="{ name: 'a', params: { id: article._id }}") {{article.title}}
-      div {{article.content}}
+      div {{article.summary}}
       .txt-right
         span.create-time {{ article.createTime }}
         a.btn-more(v-link="{ name: 'a', params: { id: article._id }}") 阅读全文
