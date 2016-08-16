@@ -1,7 +1,7 @@
 <template lang="jade">
 .container
   article.article-wrapper
-    header 
+    header
       h1 {{ article.title }}
       p {{ article.createTime }}
     div {{ article.content }}

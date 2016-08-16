@@ -9,6 +9,4 @@ header.main-header
                 a(v-link="{ path: '/'}") 首页
             li.nav-item
                 a(v-link="{ path: '/about'}") 关于
-
-  </header>
 </template>

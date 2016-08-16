@@ -2,7 +2,7 @@
 div
   vheader
   .main-content
-    router-view(transition="fade" transition-mode="out-in")
+    router-view(transition="fade", transition-mode="out-in")
   vfooter
 </template>
 
