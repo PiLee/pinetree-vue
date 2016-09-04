@@ -15,18 +15,18 @@ const router = new VueRouter({
 router.map({
   '/': {
     component: function (resolve) {
-      require(['./components/Home'], resolve)
+      require(['./pages/Home'], resolve)
     }
   },
   '/a/:id': {
     name: 'a',
     component: function (resolve) {
-      require(['./components/Article'], resolve)
+      require(['./pages/Article'], resolve)
     }
   },
   '/about': {
     component: function (resolve) {
-      require(['./components/About'], resolve)
+      require(['./pages/About'], resolve)
     }
   }
 })

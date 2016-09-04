@@ -5,13 +5,6 @@ import hljs from 'highlight.js'
 
 marked.setOptions({
   renderer: new marked.Renderer(),
-  gfm: true,
-  tables: true,
-  breaks: false,
-  pedantic: false,
-  sanitize: true,
-  smartLists: true,
-  smartypants: false,
   highlight: function (code) {
     return hljs.highlightAuto(code).value
   }
@@ -31,7 +24,7 @@ const mutations = {
     state.content = marked(data.content)
     state.title = data.title
     state.author = data.author
-    state.createTime = moment(data.createTime).format('LL')
+    state.createTime = moment.utc(data.createTime).format('lll')
   }
 }
 

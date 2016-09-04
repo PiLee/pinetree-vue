@@ -2,9 +2,9 @@
 .container
   ul.index-article-list
     li.article-item(v-for="article in articleList")
-      h1
-        a(v-link="{ name: 'a', params: { id: article._id }}") {{article.title}}
-      div {{article.summary}}
+      h1.title
+        a(v-link="{ name: 'a', params: { id: article._id }}", v-html="article.title")
+      div.summary {{article.summary}}
       .txt-right
         span.create-time {{ article.createTime }}
         a.btn-more(v-link="{ name: 'a', params: { id: article._id }}") 阅读全文

@@ -1,9 +1,11 @@
 import * as types from './mutation-types'
-const API_ROOT = 'http://myvb:3088/'
+import { API_ROOT } from '../config'
 
 export const getArticleList = function ({ dispatch }) {
   this.$http.get(API_ROOT + 'api/article-list').then(response => {
     dispatch(types.GET_ARTICLE_LIST, JSON.parse(response.body))
+  }, function (error) {
+    console.log(error)
   })
 }
 

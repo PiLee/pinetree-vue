@@ -9,7 +9,7 @@ const state = {
 const mutations = {
   [GET_ARTICLE_LIST] (state, items) {
     for (let i in items) {
-      items[i].createTime = moment(items[i].createTime).startOf('day').fromNow()
+      items[i].createTime = moment.utc(items[i].createTime).format('l')
     }
     state.articleList = items
   }
